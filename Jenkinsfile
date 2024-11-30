@@ -9,7 +9,7 @@ pipeline {
         stage ('this is maven build stage # 1') {
             when {
                 expression {
-                    environment branch_name ==~ /(feature|hotfix)/
+                     branch_name ==~ /(feature|hotfix)/
                 }
             }
             steps {
